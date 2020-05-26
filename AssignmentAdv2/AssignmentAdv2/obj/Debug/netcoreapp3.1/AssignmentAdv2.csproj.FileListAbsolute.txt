@@ -1,0 +1,11 @@
+C:\Users\Dell\source\repos\AssignmentAdv2\AssignmentAdv2\bin\Debug\netcoreapp3.1\AssignmentAdv2.exe
+C:\Users\Dell\source\repos\AssignmentAdv2\AssignmentAdv2\bin\Debug\netcoreapp3.1\AssignmentAdv2.deps.json
+C:\Users\Dell\source\repos\AssignmentAdv2\AssignmentAdv2\bin\Debug\netcoreapp3.1\AssignmentAdv2.runtimeconfig.json
+C:\Users\Dell\source\repos\AssignmentAdv2\AssignmentAdv2\bin\Debug\netcoreapp3.1\AssignmentAdv2.runtimeconfig.dev.json
+C:\Users\Dell\source\repos\AssignmentAdv2\AssignmentAdv2\bin\Debug\netcoreapp3.1\AssignmentAdv2.dll
+C:\Users\Dell\source\repos\AssignmentAdv2\AssignmentAdv2\bin\Debug\netcoreapp3.1\AssignmentAdv2.pdb
+C:\Users\Dell\source\repos\AssignmentAdv2\AssignmentAdv2\obj\Debug\netcoreapp3.1\AssignmentAdv2.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\AssignmentAdv2\AssignmentAdv2\obj\Debug\netcoreapp3.1\AssignmentAdv2.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\AssignmentAdv2\AssignmentAdv2\obj\Debug\netcoreapp3.1\AssignmentAdv2.AssemblyInfo.cs
+C:\Users\Dell\source\repos\AssignmentAdv2\AssignmentAdv2\obj\Debug\netcoreapp3.1\AssignmentAdv2.dll
+C:\Users\Dell\source\repos\AssignmentAdv2\AssignmentAdv2\obj\Debug\netcoreapp3.1\AssignmentAdv2.pdb
