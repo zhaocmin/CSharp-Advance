@@ -1,0 +1,14 @@
+1 login and verify from database
+2 create tabs for different functions
+3 we can see the details from each task
+4 we can delete task from the view
+5 we can delete tasks from database
+6 we can add tasks to view
+7 we can add tasks to database
+
+I took so much time on ui design, still working on register and update for different task in different tab.
+
+you can run the sql script and use 
+UserName：Max, Password:max
+UserName：Alex, Password:alex
+to log in

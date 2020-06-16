@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="501101225950465abac0284c0f1308f5" Name="Diagram1">
+        <EntityTypeShape EntityType="TaskDBModel.AssignToYou" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaskDBModel.Important" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaskDBModel.MyDay" Width="1.5" PointX="3" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaskDBModel.Planed" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaskDBModel.Task" Width="1.5" PointX="3" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaskDBModel.User" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <AssociationConnector Association="TaskDBModel.FK__AssignToY__UserI__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="TaskDBModel.FK__Important__UserI__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="TaskDBModel.FK__MyDay__UserId__31EC6D26" ManuallyRouted="false" />
+        <AssociationConnector Association="TaskDBModel.FK__Planed__UserId__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="TaskDBModel.FK__Task__UserId__3D5E1FD2" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

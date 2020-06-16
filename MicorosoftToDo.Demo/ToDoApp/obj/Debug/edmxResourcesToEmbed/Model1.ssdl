@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TaskDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AssignToYou">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="AssignToYouText" Type="varchar" MaxLength="800" />
+  </EntityType>
+  <EntityType Name="Important">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="ImportantText" Type="varchar" MaxLength="800" />
+  </EntityType>
+  <EntityType Name="MyDay">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="MyDayText" Type="varchar" MaxLength="800" />
+  </EntityType>
+  <EntityType Name="Planed">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="PlanedText" Type="varchar" MaxLength="800" />
+  </EntityType>
+  <EntityType Name="Task">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="TaskText" Type="varchar" MaxLength="800" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="username" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__AssignToY__UserI__3A81B327">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="AssignToYou" Type="Self.AssignToYou" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssignToYou">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Important__UserI__34C8D9D1">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Important" Type="Self.Important" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Important">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MyDay__UserId__31EC6D26">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="MyDay" Type="Self.MyDay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyDay">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Planed__UserId__37A5467C">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Planed" Type="Self.Planed" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Planed">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Task__UserId__3D5E1FD2">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Task" Type="Self.Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Task">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TaskDBModelStoreContainer">
+    <EntitySet Name="AssignToYou" EntityType="Self.AssignToYou" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Important" EntityType="Self.Important" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MyDay" EntityType="Self.MyDay" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Planed" EntityType="Self.Planed" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Task" EntityType="Self.Task" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__AssignToY__UserI__3A81B327" Association="Self.FK__AssignToY__UserI__3A81B327">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="AssignToYou" EntitySet="AssignToYou" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Important__UserI__34C8D9D1" Association="Self.FK__Important__UserI__34C8D9D1">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Important" EntitySet="Important" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MyDay__UserId__31EC6D26" Association="Self.FK__MyDay__UserId__31EC6D26">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="MyDay" EntitySet="MyDay" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Planed__UserId__37A5467C" Association="Self.FK__Planed__UserId__37A5467C">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Planed" EntitySet="Planed" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Task__UserId__3D5E1FD2" Association="Self.FK__Task__UserId__3D5E1FD2">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Task" EntitySet="Task" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
